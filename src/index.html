@@ -47,20 +47,15 @@
 
     <nav>
       <ul class="nav-links">
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Дизайн</a></li>
-        <li><a href="#">Стили</a></li>
-        <li><a href="#">Наши работы</a></li>
+        <li><a data-page="main" href="#">О нас</a></li>
+        <li><a data-page="glazing"href="#">Дизайн</a></li>
+        <li><a data-page="decoration"href="#">Стили</a></li>
+        <li><a data-page="works"href="#">Наши работы</a></li>
       </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
     </nav>
     
     <!-- Main -->
-    <main class="main">
+    <section data-index="0" class="main">
       <div class="container">
         <div class="row">
 
@@ -104,10 +99,10 @@
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
     <!-- Glazing -->
-    <section class="glazing">
+    <section data-index="1" class="glazing">
       <div class="container">
 
         <div class="section_header">
@@ -274,7 +269,7 @@
     </section>
 
     <!-- Decoration -->
-    <section class="decoration">
+    <section data-index="2" class="decoration">
       <div class="container">
         <div class="section_header">
           <h2>ЗАКАЖИТЕ ОТДЕЛКУ БАЛКОНА СО СКИДКОЙ 60%!</h2>
@@ -539,7 +534,7 @@
     <div class="overlay"></div>
 
     <!-- Our works -->
-    <section class="works">
+    <section data-index="3" class="works">
       
       <div class="container">
         <div class="section_header">

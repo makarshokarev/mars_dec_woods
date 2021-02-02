@@ -20,6 +20,9 @@ nav {
   min-height: 6vh;
   background-color: #0099ff;
   font-family: 'Montserrat', sans-serif;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0px;
 }
 
 .nav-links{
