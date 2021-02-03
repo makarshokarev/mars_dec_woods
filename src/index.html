@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico">
-    <title>Ирвас окна</title>
+    <title>MARS Decorative Woods</title>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container" id="about">
         <div class="row">
 
           <div class="col-md-9 col-sm-6 col-xs-12">
@@ -47,15 +47,16 @@
 
     <nav>
       <ul class="nav-links">
-        <li><a data-page="main" href="#">О нас</a></li>
-        <li><a data-page="glazing"href="#">Дизайн</a></li>
-        <li><a data-page="decoration"href="#">Стили</a></li>
-        <li><a data-page="works"href="#">Наши работы</a></li>
+        <li class="active"><a href="#about" class="nav-link">О нас</a></li>
+        <li class="nav-item"><a href="#style" class="nav-link">Дизайн</a></li>
+        <li class="nav-item"><a href="#design" class="nav-link">Стили</a></li>
+        <li class="nav-item"><a href="#works" class="nav-link">Наши работы</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
       </ul>
     </nav>
     
     <!-- Main -->
-    <section data-index="0" class="main">
+    <section class="main">
       <div class="container">
         <div class="row">
 
@@ -102,11 +103,11 @@
     </section>
 
     <!-- Glazing -->
-    <section data-index="1" class="glazing">
+    <section class="glazing" id="style">
       <div class="container">
 
         <div class="section_header">
-          <h2>Стили</h2>
+          <h2>Дизайн</h2>
           <div class="section_header_sub"></div>
         </div>
 
@@ -269,10 +270,10 @@
     </section>
 
     <!-- Decoration -->
-    <section data-index="2" class="decoration">
+    <section class="decoration" id="design">
       <div class="container">
         <div class="section_header">
-          <h2>ЗАКАЖИТЕ ОТДЕЛКУ БАЛКОНА СО СКИДКОЙ 60%!</h2>
+          <h2>Стили</h2>
           <div class="section_header_sub"></div>
         </div>
         
@@ -343,15 +344,6 @@
                  </div>
                </div>
               </div>
-              <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-                <form class="form main_form decoration_form" action="#">
-                  <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                  <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
-                  <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
-                  <p class="form_notice">Ваши данные конфиденциальны</p>
-                </form>
-              </div> 
             </div> <!-- /internal -->
 
             <!-- external -->
@@ -401,15 +393,6 @@
                  </div>
                </div>
               </div>
-              <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-                <form class="form main_form decoration_form" action="#">
-                  <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-                  <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                  <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
-                  <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
-                  <p class="form_notice">Ваши данные конфиденциальны</p>
-                </form>
-              </div> 
             </div>
             <!-- .external -->
 
@@ -534,7 +517,7 @@
     <div class="overlay"></div>
 
     <!-- Our works -->
-    <section data-index="3" class="works">
+    <section class="works" id="works">
       
       <div class="container">
         <div class="section_header">
@@ -554,141 +537,32 @@
       </div>
     </section>
 
-    <!-- Guarantees -->
-    <section class="guarantees">
-      <div class="container">
-        <div class="section_header guarantees_header">
-          <h2>мы гарантируем вам</h2>
-          <div class="section_header_sub guarantees_header_sub"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/1.png" alt="#">
-              <h3>Высокое качество</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.1s">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/2.png" alt="">
-              <h3>Выполнение работ <br>под ключ</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.2s">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/3.png" alt="">
-              <h3>Монтаж в короткие <br>сроки</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.3s">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/4.png" alt="">
-              <h3>Цены <br>от производителя</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.4s">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/5.png" alt="">
-              <h3>Бесплатный замер <br>и консультацию</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 text-center wow fadeInUp" data-wow-delay="0.5s">
-            <div class="guarantees_block">
-              <img src="assets/img/guarantees/6.png" alt="">
-              <h3>Тепло и уют <br>на балконе</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Payment -->
-    <section class="payment">
-      <div class="container">
-        <div class="section_header payment_header">
-          <h2>Вы можете оплатить наши услуги:</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-4 wow bounceIn">
-            <div class="payment_item">
-              <div class="payment_img">
-                <img src="assets/img/payment/wallet.png" alt="">
-              </div>
-              <h3>Наличными</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 wow bounceIn" data-wow-delay="0.3s">
-            <div class="payment_item">
-              <div class="payment_img">
-                <img src="assets/img/payment/credit-card.png" alt="">
-              </div>
-              <h3>Банковской картой</h3>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 wow bounceIn" data-wow-delay="0.6s">
-           <div class="payment_item">
-             <div class="payment_img">
-               <img src="assets/img/payment/museum.png" alt="">
-             </div>
-             <h3>Безналичный расчет</h3>
-           </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sale -->
-    <section class="sale">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-md-6 wow fadeInLeft">
-            <h2 class="sale_title">Акция - 60%</h2>
-            <p class="sale_subtitle">Успей сэкономить на остеклении! Только до 18 декабря!</p>
-            <div class="timer1" id="timer">
-                <p><h4>ДО ЗАВЕРШЕНИЯ АКЦИИ:</h4></p>
-                <div class="container1">
-                    <div class="numbers1"><div><span id="days">08</span></div><div class="description1">Дней</div></div>
-                    <div class="numbers1"><div><span id="hours">18</span></div><div class="description1">Часов</div></div>
-                    <div class="numbers1"><div><span id="minutes">33</span></div><div class="description1">Минут</div></div>
-                    <div class="numbers1"><div><span id="seconds">44</span></div><div class="description1">Секунд</div></div>      
-                </div>
-              </div>
-          </div>
-        
-          <div class="col-lg-4 col-lg-offset-3 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2 wow fadeInRight">
-            <form class="form main_form" action="#">
-              <h2>Запишитесь сегодня на <br><span>бесплатный замер</span></h2>
-              <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-              <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
-              <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
-              <p class="form_notice">Ваши данные конфиденциальны</p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contacts -->
-    <section class="contacts">
+    <section class="contacts" id="contact">
       <div class="container">
         <div class="section_header">
           <h2>Как нас найти</h2>
           <div class="section_header_sub"></div>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-md-6 wow fadeInLeft">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047184!2d37.602909316080805!3d55.92749898597191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1510535523155" width="550" height="450" style="border:0" allowfullscreen></iframe>
-          </div>
-          <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 wow fadeInRight">
+          <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-0 wow fadeInRight">
+            <form class="form main_form" action="#">
+              <h2><span>Заказать<br>декоративный элемент</span></h2>
+              <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
+              <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+              <input class="form-control form_input" name="user_email" required type="text" placeholder="Введите email">
+              <textarea class="form-control form_input" name="user_msg" required type="text" placeholder="Введите краткое описание" rows="8"></textarea>
+              <button class="text-uppercase btn-block button" name="submit" type="submit">Вызвать замерщика!</button>
+              <p class="form_notice">Ваши данные конфиденциальны</p>
+            </form>          </div>
+          <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-0 wow fadeInRight">
             <div class="contacts_info">
-              <h3>Юридический адрес:</h3>
-              <p>ООО «ИРВАС», 127411, г.Москва, Дмитровское шоссе, д.125, корпус 1</p>
-              <h3>Фактический адрес:</h3>
-              <p>ООО «ИРВАС», 141031, МО, Мытищинский р-он, п.Вешки,Выставочная,д.53</p>
+              <h3>Aдрес:</h3>
+              <p>MARS OÜ <br> Эстония, Ида-Вирумаа, Кохтла-Ярве</p>
               <h3>Телефон:</h3>
-              <p>+7 (495) 646-61- 71 <span>(многоканальный)</span></p>
+              <p>+372 5307 6206</p>
               <h3>E-mail:</h3>
-              <a href="#">info@irvasokna.ru</a>
+              <a href="#">mars.dec.woods@gmail.com</a>
               <h3>Режим работы:</h3>
               <p>9:00 - 18:00 без выходных</p>
             </div>
@@ -713,13 +587,13 @@
         <div class="row">
           <div class="col-sm-4 col-sm-push-8 col-xs-12">
             <div class="contacts">
-              <a class="phone" href="#">+7 (495) 646-61-71</a>
-              <a class="email" href="#">info@irvasokna.ru</a>
+              <a class="phone" href="#">+372 5307 6206</a>
+              <a class="email" href="#">mars.dec.woods@gmail.com</a>
             </div>
           </div>
           <div class="col-sm-4 col-xs-12">
             <div class="logo">
-              <img src="assets/img/header/logo.png" alt="#">
+              <img src="assets/img/header/cover1.png" alt="#">
             </div>
           </div>
           <div class="col-sm-4 col-sm-pull-8 col-xs-12">
@@ -767,86 +641,7 @@
         </div>
     </div>
 
-    <!-- Calculator -->
-   <div class="popup_calc">
-        <div class="popup_dialog">
-            <div class="popup_calc_content text-center">
-                <button type="button" class="popup_calc_close"><strong>&times;</strong></button>
-                 <h2>Калькулятор</h2>
-                <h3>Выберите форму балкона <br>и укажите размеры</h3>
-                <div class="balcon_icons">
-                    <span class="balcon_icons_img do_image_more">
-                      <img src="assets/img/modal_calc/balkon/ba_01.png" alt="Тип1"></span>
-                    <span class="balcon_icons_img">
-                      <img src="assets/img/modal_calc/balkon/ba_02.png" alt="Тип2"></span>
-                    <span class="balcon_icons_img">
-                      <img src="assets/img/modal_calc/balkon/ba_03.png" alt="Тип3"></span>
-                    <span class="balcon_icons_img"> 
-                      <img src="assets/img/modal_calc/balkon/ba_04.png" alt="Тип4"></span>
-                  </div>
-                   <div class="big_img text-center">
-                     <img src="assets/img/modal_calc/balkon/type1.png" alt="Тип1">
-                     <img src="assets/img/modal_calc/balkon/type2.png" alt="Тип2">
-                     <img src="assets/img/modal_calc/balkon/type3.png" alt="Тип3">
-                     <img src="assets/img/modal_calc/balkon/type4.png" alt="Тип4">
-                   </div>
-                <input class="form-control" id="width" type="text" placeholder="Ширина" required>
-                <label for="width">мм</label>
-                <div class="multiplication"><strong>&times;</strong></div>
-                <input class="form-control" id="height" type="text" placeholder="Высота" required>
-                <label for="height">мм</label>
-                <button class="button popup_calc_button">Далее</button>
-            </div>
-        </div>
-    </div> 
 
-   <div class="popup_calc_profile" data-modal>
-        <div class="popup_dialog">
-            <div class="popup_calc_profile_content text-center">
-                <button type="button" class="popup_calc_profile_close"><strong>&times;</strong></button>
-                 <h2>Калькулятор</h2>
-                 <h3>Выберите тип остекления <br>и его профиль</h3>
-                 <select class="form-control" name="view" id="view_type">
-                   <option value="tree">Деревянное остекление</option>
-                   <option value="aluminum">Алюминиевое остекление</option>
-                   <option value="plastic">Остекление пластиковыми рамами</option>
-                   <option value="french">Панорамное остекление</option>
-                   <option value="overhang">Остекление с выносом</option>
-                 </select>
-                 <img src="assets/img/modal_calc/icon_cold.png" alt="">
-                 <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
-                     <span class="checkbox-custom" id="cold"></span>
-                     <span class="label">Холодное</span>
-                 </label>
-                 <img src="assets/img/modal_calc/icon_warm.png" alt="">
-                 <label>
-                     <input class="checkbox" type="checkbox" name="checkbox-test">
-                     <span class="checkbox-custom" id="warm"></span>
-                     <span class="label">Теплое</span>
-                 </label>
-
-                 <button class="button popup_calc_profile_button">Далее</button>
-            </div>
-        </div>
-    </div> 
-
-    <div class="popup_calc_end" data-modal>
-        <div class="popup_dialog">
-            <div class="popup_content text-center">
-                <button type="button" class="popup_calc_end_close"><strong>&times;</strong></button>
-                <div class="popup_form">
-                    <form class="form" action="#">
-                      <h2>Спасибо за обращение! <br>Оставьте свои данные</h2>
-                        <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
-                        <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
-                        <button class="text-uppercase btn-block button" name="submit" type="submit">Рассчитать стоимость</button>
-                        <p class="form_notice">Перезвоним в течение 10 минут</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 <script src="script.js"></script>
   </body>
 </html>
